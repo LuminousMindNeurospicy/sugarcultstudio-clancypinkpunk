@@ -113,22 +113,27 @@
               <img
                 src="https://raw.githubusercontent.com/Frontendcreator2025/sugarcultstudio-clancypinkpunk/refs/heads/main/sugarcult2logo.png"
                 alt="Sugar Cult Studio Logo"
-                class="w-20 h-20 object-contain"
+                class="w-16 h-16 md:w-20 md:h-20 object-contain"
                 onerror="this.style.display='none';"
               />
               <div>
                 <h1
                   id="brand-name"
-                  class="text-2xl font-bold"
+                  class="text-lg md:text-2xl font-bold"
                   style="color: #39ff14"
                 >
                   Sugar Cult Studio
                 </h1>
-                <p id="brand-subtitle" class="text-sm" style="color: #00bceb">
+                <p
+                  id="brand-subtitle"
+                  class="text-xs md:text-sm"
+                  style="color: #00bceb"
+                >
                   By Clancy Pink Punk
                 </p>
               </div>
             </div>
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8">
               <a
                 href="#inicio"
@@ -171,6 +176,72 @@
                 >Contacto</a
               >
             </div>
+            <!-- Mobile Menu Button -->
+            <button
+              id="mobile-menu-button"
+              class="md:hidden text-white text-3xl hover:text-[#ff00ac] transition-colors"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden"
+          style="
+            background: rgba(26, 0, 51, 0.98);
+            border-top: 1px solid #b413ec;
+          "
+        >
+          <div class="px-4 py-4 space-y-3">
+            <a
+              href="#inicio"
+              class="mobile-menu-link block text-white hover:text-[#ff00ac] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,0,172,0.1)]"
+            >
+              Inicio</a
+            >
+            <a
+              href="#manifiesto"
+              class="mobile-menu-link block text-white hover:text-[#FF1493] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,20,147,0.1)]"
+            >
+              Manifiesto</a
+            >
+            <a
+              href="#bio"
+              class="mobile-menu-link block text-white hover:text-[#FFFF00] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,255,0,0.1)]"
+            >
+              Bio</a
+            >
+            <a
+              href="#nosotros"
+              class="mobile-menu-link block text-white hover:text-[#FF6A00] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,106,0,0.1)]"
+            >
+              Nosotros</a
+            >
+            <a
+              href="#galeria"
+              class="mobile-menu-link block text-white hover:text-[#B413EC] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(180,19,236,0.1)]"
+              >Galería</a
+            >
+            <a
+              href="#galactic-queer"
+              class="mobile-menu-link block text-white hover:text-[#FF3BBF] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,59,191,0.1)]"
+            >
+              Galactic Queer</a
+            >
+            <a
+              href="#esculturas"
+              class="mobile-menu-link block text-white hover:text-[#ffaa00] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(255,170,0,0.1)]"
+            >
+              Esculturas</a
+            >
+            <a
+              href="#contacto"
+              class="mobile-menu-link block text-white hover:text-[#06bae7] transition-colors font-medium py-2 px-4 rounded-lg hover:bg-[rgba(6,186,231,0.1)]"
+            >
+              Contacto</a
+            >
           </div>
         </div>
       </nav>
@@ -203,8 +274,8 @@
                 Arte Digital que Cobra Vida
               </h2>
               <p id="hero-subtitle" class="text-xl md:text-2xl text-white">
-                Esculturas únicas creadas con impresión 3D y cer������mica.
-                Donde la tecnología se encuentra con el arte tradicional.
+                Esculturas únicas creadas con impresión 3D y cerámica. Donde la
+                tecnología se encuentra con el arte tradicional.
               </p>
               <button
                 id="cta-button"
@@ -254,7 +325,7 @@
             class="text-4xl md:text-6xl font-bold text-center mb-12"
             style="color: #ffffff; text-shadow: 0 0 20px rgba(0, 0, 0, 0.3)"
           >
-            🍭✨ Manifiesto Sugar Cult Studio
+            Manifiesto Sugar Cult Studio
           </h2>
           <div class="space-y-6">
             <div
@@ -302,8 +373,7 @@
                 <p class="text-white text-lg leading-relaxed">
                   Aquí no hay "mass production",<br />
                   cada escultura es una
-                  <strong style="color: #39ff14">✨statement piece✨</strong
-                  ><br />
+                  <strong style="color: #39ff14">statement piece</strong><br />
                   para altar, vitrina o feed.
                 </p>
               </div>
@@ -383,7 +453,7 @@
                   border: 2px solid #ff1493;
                 "
               >
-                <p class="text-2xl mb-2">💅</p>
+                <p class="text-2xl mb-2"></p>
                 <p class="text-white font-bold">
                   Que el arte puede ser cute y político
                 </p>
@@ -395,7 +465,7 @@
                   border: 2px solid #00ffff;
                 "
               >
-                <p class="text-2xl mb-2">💅</p>
+                <p class="text-2xl mb-2"></p>
                 <p class="text-white font-bold">
                   Que el diseño puede estar loco y tener sentido
                 </p>
@@ -407,7 +477,7 @@
                   border: 2px solid #39ff14;
                 "
               >
-                <p class="text-2xl mb-2">💅</p>
+                <p class="text-2xl mb-2"></p>
                 <p class="text-white font-bold">
                   Que lo hecho con máquina también tiene corazón
                 </p>
@@ -861,7 +931,7 @@
               text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
             "
           >
-            🌌 GALACTIC QUEER ✨
+            GALACTIC QUEER
           </h2>
           <p
             class="text-center text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto"
@@ -968,7 +1038,7 @@
                 class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
               >
                 <p class="text-white font-bold text-lg">
-                  🚀 Infinite Expression
+                  ✨ Infinite Expression
                 </p>
               </div>
             </div>
@@ -998,7 +1068,7 @@
               class="text-2xl md:text-3xl font-bold text-white"
               style="text-shadow: 0 0 20px rgba(255, 255, 255, 0.5)"
             >
-              🌟 Celebrando la diversidad en cada dimensión 🌟
+              Celebrando la diversidad en cada dimensión
             </p>
           </div>
         </div>
@@ -1271,7 +1341,7 @@
                   CLABE interbancaria disponible
                 </p>
                 <p>
-                  <strong>🚴‍♀️ Entrega:</strong><br />
+                  <strong>🚴Entrega:</strong><br />
                   En bicicleta a domicilio<br />
                   o punto medio en metro
                 </p>
@@ -1296,7 +1366,7 @@
                   border: 2px solid #ff69b4;
                 "
               >
-                📱 Instagram
+                Instagram
               </a>
               <a
                 href="https://tiktok.com/@clancypinkpunk"
@@ -1310,7 +1380,7 @@
                   border: 2px solid #00ffff;
                 "
               >
-                🎵 TikTok
+                TikTok
               </a>
               <a
                 href="https://github.com/clancypinkpunk"
@@ -1324,7 +1394,7 @@
                   border: 2px solid #39ff14;
                 "
               >
-                💻 GitHub
+                GitHub
               </a>
               <a
                 href="https://pinterest.com/clancypinkpunk"
@@ -1338,7 +1408,7 @@
                   border: 2px solid #ffff00;
                 "
               >
-                📌 Pinterest
+                Pinterest
               </a>
             </div>
           </div>
@@ -1502,6 +1572,35 @@
         chatbot_greeting:
           "¡Hola! Soy el asistente de Sugar Cult Studio. ¿En qué puedo ayudarte hoy?",
       };
+
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (
+            !mobileMenu.contains(e.target) &&
+            !mobileMenuButton.contains(e.target)
+          ) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      }
 
       // Element SDK initialization
       if (window.elementSdk) {
@@ -1816,7 +1915,7 @@
         typingDiv.id = "typing-indicator";
         typingDiv.className = "chat-message flex items-start space-x-2";
         typingDiv.innerHTML = `
-        <div class="w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-xs md:text-sm flex-shrink-0" style="background: #ff00ac;">🤖</div>
+        <div class="w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center text-xs md:text-sm flex-shrink-0" style="background: #ff00ac;">����</div>
         <div class="flex-1 p-2 md:p-3 rounded-lg" style="background: rgba(255, 0, 172, 0.2); color: white;">
           <p class="text-sm md:text-base">
             <span class="inline-block animate-pulse">●</span>
@@ -1916,7 +2015,7 @@
           message.includes("redes") ||
           message.includes("social")
         ) {
-          return "Síguenos en nuestras redes bestie! 📱 Instagram: @clancypinkpunk | TikTok: @clancypinkpunk | También estamos en GitHub y Pinterest! Encuentra todos los links en la sección de Contacto abajo! 💜✨";
+          return "Síguenos en nuestras redes bestie! 📱 Instagram: @clancypinkpunk | TikTok: @clancypinkpunk | Tambi��n estamos en GitHub y Pinterest! Encuentra todos los links en la sección de Contacto abajo! 💜✨";
         } else {
           return "Oop, no entendí eso bestie! 😅 Pero puedo ayudarte con: precios 💰, ver piezas 🎨, pedidos custom ✨, envíos 🚴‍♀️, pagos 💳, info sobre Clancy, o el Manifiesto 🍭! También escríbenos al 56 1067 7516! 💬";
         }
@@ -2131,7 +2230,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'9b476447b008eef2',t:'MTc2NjgyMzU1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9b4abf6ca1855792',t:'MTc2Njg1ODc0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
